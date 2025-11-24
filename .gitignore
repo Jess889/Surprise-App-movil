@@ -43,3 +43,29 @@ app.*.map.json
 /android/app/debug
 /android/app/profile
 /android/app/release
+
+# CocoaPods
+ios/Pods/
+ios/.symlinks/
+
+# Flutter and Xcode generated files
+ios/Runner.xcworkspace/
+ios/Flutter/Flutter.framework/
+ios/Flutter/Flutter.podspec
+ios/Flutter/Generated.xcconfig
+
+# macOS specific
+macos/Pods/
+macos/.symlinks/
+macos/Flutter/Flutter.framework/
+macos/Runner.xcworkspace/
+
+# Gradle files
+.gradle/
+**/gradle-wrapper.jar
+**/gradle-wrapper.properties
+.gradle/
+gradle/
+
+# Android Studio
+.idea/
