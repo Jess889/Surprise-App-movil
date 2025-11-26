@@ -26,7 +26,7 @@ class _DashboardScreenState extends State<DashboardScreen> {
     try {
       final prefs = await SharedPreferences.getInstance();
       final token = prefs.getString('authToken');
-      final uri = Uri.parse('http://10.0.2.2:4000/api/mobile/dashboard');
+      final uri = Uri.parse('https://surprise-backend.vercel.app/api/mobile/dashboard');
 
       final response = await http.get(
         uri,

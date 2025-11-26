@@ -2,7 +2,7 @@ import 'dart:convert';
 import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
 
-const String kBaseUrl = 'http://10.0.2.2:4000';
+const String kBaseUrl = 'https://surprise-backend.vercel.app';
 
 enum PromoTab { promociones, cupones }
 enum FilterTab { activos, crear, historial }

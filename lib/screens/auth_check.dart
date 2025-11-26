@@ -33,7 +33,7 @@ class _AuthCheckScreenState extends State<AuthCheckScreen> {
         return;
       }
 
-      final uri = Uri.parse('http://10.0.2.2:4000/api/mobile/auth/me');
+      final uri = Uri.parse('https://surprise-backend.vercel.app/api/mobile/auth/me');
       final response = await http.get(
         uri,
         headers: {'Authorization': 'Bearer $token'},

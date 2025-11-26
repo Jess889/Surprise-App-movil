@@ -27,11 +27,11 @@ class _ReportesScreenState extends State<ReportesScreen> {
       final token = prefs.getString('authToken');
 
       final resumenRes = await http.get(
-        Uri.parse('http://10.0.2.2:4000/api/mobile/reportes/resumen-rapido'),
+        Uri.parse('https://surprise-backend.vercel.app/api/mobile/reportes/resumen-rapido'),
         headers: {'Authorization': 'Bearer $token'},
       );
       final exportRes = await http.get(
-        Uri.parse('http://10.0.2.2:4000/api/mobile/reportes/exports/latest'),
+        Uri.parse('https://surprise-backend.vercel.app/api/mobile/reportes/exports/latest'),
         headers: {'Authorization': 'Bearer $token'},
       );
 
@@ -53,7 +53,7 @@ class _ReportesScreenState extends State<ReportesScreen> {
       final prefs = await SharedPreferences.getInstance();
       final token = prefs.getString('authToken');
       final res = await http.get(
-        Uri.parse('http://10.0.2.2:4000/api/mobile/reportes/$endpoint'),
+        Uri.parse('https://surprise-backend.vercel.app/api/mobile/reportes/$endpoint'),
         headers: {'Authorization': 'Bearer $token'},
       );
 

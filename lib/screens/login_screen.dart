@@ -27,7 +27,7 @@ class _LoginScreenState extends State<LoginScreen> {
     final password = _passwordController.text.trim();
 
     try {
-      final uri = Uri.parse('http://10.0.2.2:4000/api/mobile/auth/login');
+      final uri = Uri.parse('https://surprise-backend.vercel.app/api/mobile/auth/login');
       final response = await http.post(
         uri,
         headers: {'Content-Type': 'application/json'},

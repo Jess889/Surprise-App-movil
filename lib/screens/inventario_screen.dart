@@ -51,7 +51,7 @@ class _InventarioScreenState extends State<InventarioScreen> {
       final token = prefs.getString('authToken');
 
       final uri = Uri.parse(
-          'http://10.0.2.2:4000/api/mobile/inventory${query.isNotEmpty ? '?q=${Uri.encodeQueryComponent(query)}' : ''}');
+          'https://surprise-backend.vercel.app/api/mobile/inventory${query.isNotEmpty ? '?q=${Uri.encodeQueryComponent(query)}' : ''}');
       final res =
           await http.get(uri, headers: {'Authorization': 'Bearer $token'});
 
